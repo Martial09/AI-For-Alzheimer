@@ -1,0 +1,21 @@
+
+services:
+  backend:
+    build: ./backend
+    container_name: Docker-back
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/models_and_embeddings:/app/models_and_embeddings
+    environment:
+      - MODEL_PATH=models_and_embeddings/dual_attention_59_59.pth
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: Docker-front
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
