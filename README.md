@@ -31,7 +31,7 @@ To facilitate immediate testing and evaluation, the repository includes a curate
 ________________________________________
 🛠 Tech Stack & Deployment
 •	Frontend: React.js (Vite), Tailwind CSS, GSAP (Animations), Lucide Icons.
-•	Backend: FastAPI (Python), Uvicorn, REST API.
+•	Backend: FastAPI (Python), Uvicorn.
 •	AI/ML: PyTorch, TorchVision, Scikit-Learn, Transformers.
 •	Orchestration: Docker & Docker-Compose for unified containerized deployment.
 ________________________________________
